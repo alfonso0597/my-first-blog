@@ -21,12 +21,13 @@
          <div>
           <h1> POSTS/TUTORIAL QUE SIGO HACIENDO </h1>
         </div>
+
           {% for post in posts %}
-            <div>
-              <p> published: {{ post.published_date }} </p>
-              <h1><a href=""> {{ post.title }} </p></a></h1>
-              <p>{{ post.text|linebreaksbr }} </p>
-            </div>
+          <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+          </div>
           {% endfor %}
 
     </body>
