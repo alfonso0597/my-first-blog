@@ -18,5 +18,16 @@
             <h2><a href="">Segunda tarea</a></h2>
             <p>Conectar la trama del arduino con el  :v</p>
         </div>
+         <div>
+          <h1> POSTS/TUTORIAL QUE SIGO HACIENDO </h1>
+        </div>
+          {% for post in posts %}
+        <div>
+          <p> published: {{ post.published_date }} </p>
+          <h1><a href=""> {{ post.title }} </p></a></h1>
+          <p>{{ post.text|linebreaksbr }} </p>
+        </div>
+          {% endfor %}
+
     </body>
 </html>
